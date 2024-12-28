@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zackary Bowling CS435 Project 6</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    #controls { position: absolute; top: 10px; left: 10px; z-index: 1; }
+    button { margin: 5px; }
+  </style>
+  
+</head>
+<body>
+  <div id="controls">
+    <button onclick="togglePower()">Power On/Off</button>
+    <button onclick="pauseResume()">Pause/Resume</button>
+    <button onclick="prevFrame()">Prev</button>
+    <button onclick="nextFrame()">Next</button>
+    <button id="toggleBallButton" onclick="toggleBall()">Remove Ball</button>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="blending.js"></script>
+</body>
+</html>
